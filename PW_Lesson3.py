@@ -39,27 +39,8 @@ card[y:y+h, x:x+w] = photo_resized_2
 
 cv2.putText(card, "OpenCV Business Card ", (80, 390), cv2.FONT_HERSHEY_TRIPLEX, 0.8, (0, 0, 0))
 
-
 cv2.imshow("image", card)
 
-
-#
-# photo = cv2.imread("mar30-09.jpg")
-#
-# photo = cv2.resize(photo, (120, 120))
-#
-# card[y:y+photo.shape[0], x:x+photo.shape[1]] = photo
-#
-# cv2.imwrite("result.png", card)
-
-# img = np.zeros((500, 400, 3), np.uint8)
-#
-# cv2.rectangle(img,  (0, 0),  (400, 500), (135, 90, 31), -1)
-#
-# image = cv2.imread('mar30-09.jpg')
-# image = cv2.resize(image, (80, 200))
-# cv2.imshow("image", image)
-
-
 cv2.waitKey(0)
+
 cv2.destroyAllWindows()
